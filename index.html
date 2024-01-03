@@ -62,6 +62,7 @@ Licensed &amp; Insured" />
     type="text/javascript">function logTcclEvent() { var t = this.getAttribute("data-tccl"); if (window._trfq && t) try { for (var e = t.split(","), r = e[0], d = e[1], n = e.splice(2), c = [], o = 0; o < n.length; o += 2)c.push([n[o], n[o + 1]]); window._trfq.push(["cmdLogEvent", d, r, c]) } catch (e) { window._trfq.push(["cmdLogEvent", "gc_published_site_error", "tccl.published.log", [["error", e.toString()], ["data", t]]]) } } "undefined" != typeof window && "undefined" != typeof document && window.addEventListener("DOMContentLoaded", function () { for (var t = document.querySelectorAll("[data-tccl]"), e = 0; e < t.length; e++)try { var r = t[e].getAttribute("data-tccl").split(","); t[e].addEventListener(r[1], logTcclEvent) } catch (t) { window._trfq.push(["cmdLogEvent", "gc_published_site_error", "tccl.published.add", [["error", t.toString()]]]) } });</script>
   <script
     type="text/javascript">'use strict';/* eslint-disable */(function (i, s, o, g, r, a, m) { i.GoogleAnalyticsObject = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments); }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m); })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-94064801-2', 'auto'); ga('send', 'pageview');</script>
+  <script type="module" src="https://unpkg.com/deep-chat@1.4.6/dist/deepChat.bundle.js"></script>
   <style data-inline-fonts>
     @font-face {
       font-family: 'Sanchez';
@@ -85,13 +86,17 @@ Licensed &amp; Insured" />
       font-stretch: normal;
       src: url(https://img1.wsimg.com/gfonts/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAaBO9a6VQ.woff) format('woff');
     }
+
     .chat-right {
-    position: absolute; /* or 'fixed' depending on your layout */
-    right: 0;
-    top: 50%; /* Adjust as needed */
-    transform: translateY(-50%); /* This centers it vertically */
-    /* Add additional styling as needed */
-}
+      position: absolute;
+      /* or 'fixed' depending on your layout */
+      right: 0;
+      top: 50%;
+      /* Adjust as needed */
+      transform: translateY(-50%);
+      /* This centers it vertically */
+      /* Add additional styling as needed */
+    }
   </style>
   <link rel="stylesheet"
     href="//img1.wsimg.com/blobby/go/e5496663-d109-4daa-843e-967b325e1036/gpub/6b70c13cf81664b3/styles.css" />
@@ -185,6 +190,7 @@ Licensed &amp; Insured" />
 </head>
 
 <body class="x x-colors-016 x-fonts-sanchez">
+
   <div id="layout-e-5496663-d-109-4-daa-843-e-967-b-325-e-1036"
     class="layout layout-layout layout-layout-layout-9 locale-en-US lang-en">
     <div data-ux="Page" id="page-4409"
@@ -379,7 +385,8 @@ Licensed &amp; Insured" />
                                               data-edit-interactive="true" href="/request-services.html"
                                               class="x-el x-el-a c1-1 c1-3k c1-3 c1-4 c1-5 c1-14 c1-15 c1-17 c1-2m c1-28 c1-4a c1-29 c1-q c1-r c1-3a c1-39 c1-2f c1-35 c1-2g c1-e c1-f x-d-ux x-d-page x-d-edit-interactive"
                                               data-tccl="ux2.HEADER.header9.Nav.Menu.Link.Default.4430.click,click">Request
-                                              Services</a></li>
+                                              Services</a>
+                                          </li>
                                           <li data-ux="ListItem"
                                             class="x-el x-el-li c1-1 c1-2 c1-3 c1-4 c1-5 c1-3b c1-1a c1-4a c1-1p c1-4b c1-e c1-f x-d-ux">
                                             <a rel="" data-ux="NavMenuLink" target=""
@@ -387,7 +394,8 @@ Licensed &amp; Insured" />
                                               data-edit-interactive="true" href="/our-services.html"
                                               class="x-el x-el-a c1-1 c1-3k c1-3 c1-4 c1-5 c1-14 c1-15 c1-17 c1-2m c1-28 c1-4a c1-29 c1-q c1-r c1-3a c1-39 c1-2f c1-35 c1-2g c1-e c1-f x-d-ux x-d-page x-d-edit-interactive"
                                               data-tccl="ux2.HEADER.header9.Nav.Menu.Link.Default.4431.click,click">Our
-                                              Services</a></li>
+                                              Services</a>
+                                          </li>
                                           <li data-ux="ListItem"
                                             class="x-el x-el-li c1-1 c1-2 c1-3 c1-4 c1-5 c1-3b c1-1a c1-4a c1-1p c1-4b c1-e c1-f x-d-ux">
                                             <a rel="" data-ux="NavMenuLink" target=""
@@ -395,7 +403,8 @@ Licensed &amp; Insured" />
                                               data-edit-interactive="true" href="/why-choose-peak-roofing"
                                               class="x-el x-el-a c1-1 c1-3k c1-3 c1-4 c1-5 c1-14 c1-15 c1-17 c1-2m c1-28 c1-4a c1-29 c1-q c1-r c1-3a c1-39 c1-2f c1-35 c1-2g c1-e c1-f x-d-ux x-d-page x-d-edit-interactive"
                                               data-tccl="ux2.HEADER.header9.Nav.Menu.Link.Default.4432.click,click">Why
-                                              Choose Your Roofing</a></li>
+                                              Choose Your Roofing</a>
+                                          </li>
                                           <li data-ux="ListItem"
                                             class="x-el x-el-li c1-1 c1-2 c1-3 c1-4 c1-5 c1-3b c1-1a c1-4a c1-1p c1-4b c1-e c1-f x-d-ux">
                                             <a rel="" data-ux="NavMenuLink" target=""
@@ -403,7 +412,8 @@ Licensed &amp; Insured" />
                                               data-edit-interactive="true" href="/about-us"
                                               class="x-el x-el-a c1-1 c1-3k c1-3 c1-4 c1-5 c1-14 c1-15 c1-17 c1-2m c1-28 c1-4a c1-29 c1-q c1-r c1-3a c1-39 c1-2f c1-35 c1-2g c1-e c1-f x-d-ux x-d-page x-d-edit-interactive"
                                               data-tccl="ux2.HEADER.header9.Nav.Menu.Link.Default.4433.click,click">About
-                                              Us</a></li>
+                                              Us</a>
+                                          </li>
                                           <li data-ux="ListItem"
                                             class="x-el x-el-li c1-1 c1-2 c1-3 c1-4 c1-5 c1-3b c1-1a c1-4a c1-1p c1-4b c1-e c1-f x-d-ux">
                                             <a rel="" data-ux="NavMenuLink" target=""
@@ -411,7 +421,8 @@ Licensed &amp; Insured" />
                                               data-edit-interactive="true" href="/roofing-blog"
                                               class="x-el x-el-a c1-1 c1-3k c1-3 c1-4 c1-5 c1-14 c1-15 c1-17 c1-2m c1-28 c1-4a c1-29 c1-q c1-r c1-3a c1-39 c1-2f c1-35 c1-2g c1-e c1-f x-d-ux x-d-page x-d-edit-interactive"
                                               data-tccl="ux2.HEADER.header9.Nav.Menu.Link.Default.4434.click,click">Roofing
-                                              Blog</a></li>
+                                              Blog</a>
+                                          </li>
                                           <li data-ux="ListItem"
                                             class="x-el x-el-li c1-1 c1-2 c1-3 c1-4 c1-5 c1-3b c1-1a c1-4a c1-1p c1-4b c1-e c1-f x-d-ux">
                                             <a rel="" data-ux="NavMenuLink" target=""
@@ -419,7 +430,8 @@ Licensed &amp; Insured" />
                                               data-edit-interactive="true" href="/now-hiring"
                                               class="x-el x-el-a c1-1 c1-3k c1-3 c1-4 c1-5 c1-14 c1-15 c1-17 c1-2m c1-28 c1-4a c1-29 c1-q c1-r c1-3a c1-39 c1-2f c1-35 c1-2g c1-e c1-f x-d-ux x-d-page x-d-edit-interactive"
                                               data-tccl="ux2.HEADER.header9.Nav.Menu.Link.Default.4435.click,click">Now
-                                              Hiring</a></li>
+                                              Hiring</a>
+                                          </li>
                                           <li data-ux="ListItem"
                                             class="x-el x-el-li c1-1 c1-2 c1-3 c1-4 c1-5 c1-3b c1-1a c1-4a c1-1p c1-4b c1-e c1-f x-d-ux">
                                             <a rel="" data-ux="NavMenuLink" target=""
@@ -427,7 +439,8 @@ Licensed &amp; Insured" />
                                               data-edit-interactive="true" href="/photo-gallery"
                                               class="x-el x-el-a c1-1 c1-3k c1-3 c1-4 c1-5 c1-14 c1-15 c1-17 c1-2m c1-28 c1-4a c1-29 c1-q c1-r c1-3a c1-39 c1-2f c1-35 c1-2g c1-e c1-f x-d-ux x-d-page x-d-edit-interactive"
                                               data-tccl="ux2.HEADER.header9.Nav.Menu.Link.Default.4436.click,click">Photo
-                                              Gallery </a></li>
+                                              Gallery </a>
+                                          </li>
                                         </ul>
                                       </li>
                                     </ul>
@@ -501,6 +514,7 @@ Licensed &amp; Insured" />
                       </div>
                     </div>
                   </div>
+
                   <div data-ux="NavigationDrawer" id="n-4410-navId-mobile" domainName="yourroofcompany.com"
                     pageRoute="/" staticContent="[object Object]"
                     class="x-el x-el-div c1-1 c1-2 c1-3 c1-4 c1-5 c1-68 c1-69 c1-6a c1-6b c1-7 c1-4u c1-6c c1-47 c1-6d c1-i c1-6e c1-6f c1-4k c1-x c1-4h c1-e c1-f x-d-ux">
@@ -531,7 +545,8 @@ Licensed &amp; Insured" />
                             data-close="true" href="/request-services.html"
                             class="x-el x-el-a c1-1 c1-2 c1-3 c1-4 c1-5f c1-14 c1-15 c1-17 c1-16 c1-28 c1-x c1-29 c1-6r c1-6s c1-41 c1-42 c1-u c1-v c1-y c1-6k c1-5l c1-6t c1-5m x-d-ux x-d-page x-d-edit-interactive x-d-close"
                             data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.4441.click,click"><span>Request
-                              Services</span></a></li>
+                              Services</span></a>
+                        </li>
                         <li data-ux="NavigationDrawerListItem"
                           class="x-el x-el-li c1-1 c1-2 c1-3 c1-4 c1-5 c1-6o c1-1a c1-4a c1-6p c1-3m c1-4b c1-6q c1-e c1-f x-d-ux">
                           <a rel="" data-ux="NavigationDrawerLink" target=""
@@ -539,7 +554,8 @@ Licensed &amp; Insured" />
                             data-close="true" href="/our-services.html"
                             class="x-el x-el-a c1-1 c1-2 c1-3 c1-4 c1-5f c1-14 c1-15 c1-17 c1-16 c1-28 c1-x c1-29 c1-6r c1-6s c1-41 c1-42 c1-u c1-v c1-y c1-6k c1-5l c1-6t c1-5m x-d-ux x-d-page x-d-edit-interactive x-d-close"
                             data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.4442.click,click"><span>Our
-                              Services</span></a></li>
+                              Services</span></a>
+                        </li>
                         <li data-ux="NavigationDrawerListItem"
                           class="x-el x-el-li c1-1 c1-2 c1-3 c1-4 c1-5 c1-6o c1-1a c1-4a c1-6p c1-3m c1-4b c1-6q c1-e c1-f x-d-ux">
                           <a rel="" data-ux="NavigationDrawerLink" target=""
@@ -547,7 +563,8 @@ Licensed &amp; Insured" />
                             data-close="true" href="/why-choose-peak-roofing"
                             class="x-el x-el-a c1-1 c1-2 c1-3 c1-4 c1-5f c1-14 c1-15 c1-17 c1-16 c1-28 c1-x c1-29 c1-6r c1-6s c1-41 c1-42 c1-u c1-v c1-y c1-6k c1-5l c1-6t c1-5m x-d-ux x-d-page x-d-edit-interactive x-d-close"
                             data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.4443.click,click"><span>Why
-                              Choose Your Roofing</span></a></li>
+                              Choose Your Roofing</span></a>
+                        </li>
                         <li data-ux="NavigationDrawerListItem"
                           class="x-el x-el-li c1-1 c1-2 c1-3 c1-4 c1-5 c1-6o c1-1a c1-4a c1-6p c1-3m c1-4b c1-6q c1-e c1-f x-d-ux">
                           <a rel="" data-ux="NavigationDrawerLink" target=""
@@ -555,7 +572,8 @@ Licensed &amp; Insured" />
                             data-close="true" href="/about-us"
                             class="x-el x-el-a c1-1 c1-2 c1-3 c1-4 c1-5f c1-14 c1-15 c1-17 c1-16 c1-28 c1-x c1-29 c1-6r c1-6s c1-41 c1-42 c1-u c1-v c1-y c1-6k c1-5l c1-6t c1-5m x-d-ux x-d-page x-d-edit-interactive x-d-close"
                             data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.4444.click,click"><span>About
-                              Us</span></a></li>
+                              Us</span></a>
+                        </li>
                         <li data-ux="NavigationDrawerListItem"
                           class="x-el x-el-li c1-1 c1-2 c1-3 c1-4 c1-5 c1-6o c1-1a c1-4a c1-6p c1-3m c1-4b c1-6q c1-e c1-f x-d-ux">
                           <a rel="" data-ux="NavigationDrawerLink" target=""
@@ -563,7 +581,8 @@ Licensed &amp; Insured" />
                             data-close="true" href="/roofing-blog"
                             class="x-el x-el-a c1-1 c1-2 c1-3 c1-4 c1-5f c1-14 c1-15 c1-17 c1-16 c1-28 c1-x c1-29 c1-6r c1-6s c1-41 c1-42 c1-u c1-v c1-y c1-6k c1-5l c1-6t c1-5m x-d-ux x-d-page x-d-edit-interactive x-d-close"
                             data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.4445.click,click"><span>Roofing
-                              Blog</span></a></li>
+                              Blog</span></a>
+                        </li>
                         <li data-ux="NavigationDrawerListItem"
                           class="x-el x-el-li c1-1 c1-2 c1-3 c1-4 c1-5 c1-6o c1-1a c1-4a c1-6p c1-3m c1-4b c1-6q c1-e c1-f x-d-ux">
                           <a rel="" data-ux="NavigationDrawerLink" target=""
@@ -571,7 +590,8 @@ Licensed &amp; Insured" />
                             data-close="true" href="/now-hiring"
                             class="x-el x-el-a c1-1 c1-2 c1-3 c1-4 c1-5f c1-14 c1-15 c1-17 c1-16 c1-28 c1-x c1-29 c1-6r c1-6s c1-41 c1-42 c1-u c1-v c1-y c1-6k c1-5l c1-6t c1-5m x-d-ux x-d-page x-d-edit-interactive x-d-close"
                             data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.4446.click,click"><span>Now
-                              Hiring</span></a></li>
+                              Hiring</span></a>
+                        </li>
                         <li data-ux="NavigationDrawerListItem"
                           class="x-el x-el-li c1-1 c1-2 c1-3 c1-4 c1-5 c1-6o c1-1a c1-4a c1-6p c1-3m c1-4b c1-6q c1-e c1-f x-d-ux">
                           <a rel="" data-ux="NavigationDrawerLink" target=""
@@ -579,7 +599,8 @@ Licensed &amp; Insured" />
                             data-close="true" href="/photo-gallery"
                             class="x-el x-el-a c1-1 c1-2 c1-3 c1-4 c1-5f c1-14 c1-15 c1-17 c1-16 c1-28 c1-x c1-29 c1-6r c1-6s c1-41 c1-42 c1-u c1-v c1-y c1-6k c1-5l c1-6t c1-5m x-d-ux x-d-page x-d-edit-interactive x-d-close"
                             data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.4447.click,click"><span>Photo
-                              Gallery </span></a></li>
+                              Gallery </span></a>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -588,94 +609,65 @@ Licensed &amp; Insured" />
             </div>
           </div>
         </div>
-        <script
-        type="module"
-        src="https://unpkg.com/deep-chat@1.4.6/dist/deepChat.bundle.js"
-      ></script>
-      
-      <h1 style="color: yellow;">Chat with Your Roof Company</h1>
-
-      <!-- Attributes can be set as strings either directly on the element (demo/textInput) or via a `setAttribute` method on its reference (introMessage).
+        <script type="module" src="https://unpkg.com/deep-chat@1.4.6/dist/deepChat.bundle.js"></script>
+        <deep-chat style="border-radius: 10px; border: 2px solid #000; box-shadow: 0px 0px 10px rgba(0,0,0,0.5);background-image: url('path-to-image.jpg'); position: fixed;right: 0;bottom: 0;
+" messageStyles='{
+        "default": {
+          "user": {
+            "bubble": {
+              "background": "linear-gradient(90deg, rgb(225 37 255) 0%, rgb(161, 99, 233) 100%)",
+              "color": "white"
+            }
+          },
+          "ai": {
+            "bubble": {"background": "linear-gradient(90deg, rgb(0, 162, 255) 30%, rgb(197 119 255) 100%)", "color": "white"}
+          }
+        },
+        "loading": {
+          "bubble": {
+            "background": "linear-gradient(90deg, rgb(0, 162, 255) 30%, rgb(197 119 255) 100%)",
+            "color": "white"
+          }
+        }
+      }' textInput='{
+        "styles": {
+          "container": {
+            "backgroundColor": "rgb(239 245 255)",
+            "color": "#0d008d"
+          }
+        }
+      }' submitButtonStyles='{
+        "submit": {
+          "svg": {
+            "styles": {
+              "default": {
+                "filter": "brightness(0) saturate(100%) invert(26%) sepia(95%) saturate(6989%) hue-rotate(288deg) brightness(107%) contrast(122%)"
+              }
+            }
+          }
+        }
+      }' auxiliaryStyle="
+        ::-webkit-scrollbar {
+          width: 10px;
+          height: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+          background-color: #54a7ff;
+          border-radius: 5px;
+        }
+        ::-webkit-scrollbar-track {
+          background-color: unset;
+        }" initialMessages='[
+        {"text": "Hey, how are you?", "role": "user"},
+        {"text": "I am doing great, how about you?", "role": "ai"},
+        {"text": "What is the meaning of life?", "role": "user"},
+        {"text": "This completely depends on the person.", "role": "ai"}
+      ]' demo="true" stream="true"></deep-chat>
+        <!-- Attributes can be set as strings either directly on the element (demo/textInput) or via a `setAttribute` method on its reference (introMessage).
         When passing JSON objects make sure that they are first correctly stringified (use the following tool https://jsonlint.com/), functions assigned
         to properties must not have external references and all regex values are properly escaped.
         You can also pass values into the component via properties by using the element reference (initialMessages).
         -->
-        <deep-chat
-        style="border-radius: 10px; border: unset; background-image: url('path-to-image.jpg'); position: fixed;right: 0;bottom: 0;"
-        messageStyles='{
-          "default": {
-            "user": {
-              "bubble": {
-                "background": "linear-gradient(90deg, rgb(225 37 255) 0%, rgb(161, 99, 233) 100%)",
-                "color": "white"
-              }
-            },
-            "ai": {
-              "bubble": {"background": "linear-gradient(90deg, rgb(0, 162, 255) 30%, rgb(197 119 255) 100%)", "color": "white"}
-            }
-          },
-          "loading": {
-            "bubble": {
-              "background": "linear-gradient(90deg, rgb(0, 162, 255) 30%, rgb(197 119 255) 100%)",
-              "color": "white"
-            }
-          }
-        }'
-        textInput='{
-          "styles": {
-            "container": {
-              "width": "100%",
-              "margin": "0",
-              "border": "unset",
-              "borderTop": "1px solid #d5d5d5",
-              "borderRadius": "0px",
-              "boxShadow": "unset"
-              "backgroundColor": "rgb(239 245 255)",
-              "color": "#0d008d"
-            },
-            "text": {
-              "fontSize": "1.05em",
-              "paddingTop": "11px",
-              "paddingBottom": "13px",
-              "paddingLeft": "12px",
-              "paddingRight": "2.4em"
-            }
-          },
-          "placeholder": {"text": "Type a message...", "style": {"color": "#bcbcbc"}}
-        }'
-        submitButtonStyles='{
-          "submit": {
-            "svg": {
-              "styles": {
-                "default": {
-                  "filter": "brightness(0) saturate(100%) invert(26%) sepia(95%) saturate(6989%) hue-rotate(288deg) brightness(107%) contrast(122%)"
-                }
-              }
-            }
-          }
-        }'
-        auxiliaryStyle="
-          ::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
-          }
-          ::-webkit-scrollbar-thumb {
-            background-color: #54a7ff;
-            border-radius: 5px;
-          }
-          ::-webkit-scrollbar-track {
-            background-color: unset;
-          }"
-        initialMessages='[
-          {"text": "Hey, how are you?", "role": "user"},
-          {"text": "I am doing great, how about you?", "role": "ai"},
-          {"text": "What is the meaning of life?", "role": "user"},
-          {"text": "This completely depends on the person.", "role": "ai"}
-        ]'
-        demo="true"
-        stream="true"
-      ></deep-chat>
-
         <div id="2555d3fb-3fa2-45f8-8a29-677d957de9e5" class="widget widget-social widget-social-social-1">
           <div data-ux="Widget"
             class="x-el x-el-div x-el widget-social-social-1 c1-1 c1-2 c1-3 c1-4 c1-5 c1-6 c1-e c1-f x-d-ux c1-1 c1-2 c1-3 c1-4 c1-5 c1-e c1-f x-d-ux">
@@ -723,7 +715,8 @@ Licensed &amp; Insured" />
                         <path
                           d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm2.511 10v-.867h-4.55v1.734h2.68a2.822 2.822 0 0 1-2.68 1.95A2.82 2.82 0 0 1 7.142 12a2.82 2.82 0 0 1 4.535-2.234l1.056-1.374a4.513 4.513 0 0 0-2.774-.943A4.556 4.556 0 0 0 5.41 12a4.556 4.556 0 0 0 4.55 4.551A4.556 4.556 0 0 0 14.511 12zm4.792.567v-1.134h-1.304V10.13h-1.134v1.304h-1.303v1.134h1.303v1.304H18v-1.304h1.304z">
                         </path>
-                      </svg></a></div>
+                      </svg></a>
+                  </div>
                 </div>
               </section>
             </div>
@@ -1081,7 +1074,8 @@ Licensed &amp; Insured" />
                                         class="x-el x-el-input c1-1 c1-2 c1-3 c1-4 c1-5s c1-8t c1-96 c1-97 c1-17 c1-7 c1-98 c1-99 c1-9a c1-9b c1-1g c1-1h c1-9c c1-9d c1-9e c1-9f c1-2d c1-9g c1-5x c1-9h c1-9i c1-9j c1-9k c1-9l c1-9m c1-64 x-d-ux x-d-aid" /><label
                                         data-ux="InputFloatLabelLabel" for="input4461"
                                         class="x-el x-el-label c1-1 c1-2 c1-3 c1-4 c1-5s c1-14 c1-15 c1-9n c1-17 c1-43 c1-9o c1-9p c1-9q c1-9r c1-9m c1-64 x-d-ux">Phone
-                                        #</label></div>
+                                        #</label>
+                                    </div>
                                   </div>
                                 </div>
                                 <div data-ux="Block"
@@ -1236,7 +1230,8 @@ Licensed &amp; Insured" />
                           <path
                             d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm2.511 10v-.867h-4.55v1.734h2.68a2.822 2.822 0 0 1-2.68 1.95A2.82 2.82 0 0 1 7.142 12a2.82 2.82 0 0 1 4.535-2.234l1.056-1.374a4.513 4.513 0 0 0-2.774-.943A4.556 4.556 0 0 0 5.41 12a4.556 4.556 0 0 0 4.55 4.551A4.556 4.556 0 0 0 14.511 12zm4.792.567v-1.134h-1.304V10.13h-1.134v1.304h-1.303v1.134h1.303v1.304H18v-1.304h1.304z">
                           </path>
-                        </svg></a></div>
+                        </svg></a>
+                    </div>
                     <div data-ux="Heading" data-aid="FOOTER_COPYRIGHT_RENDERED" data-route="copyright"
                       class="x-el x-el-p c1-1 c1-2 c1-3 c1-4 c1-5 c1-14 c1-15 c1-16 c1-17 c1-7v c1-2f c1-35 c1-19 c1-95 c1-e c1-f x-d-ux x-d-aid x-d-route x-rt">
                       <p style="margin:0"><span>Copyright © 2019 Your Roofing &nbsp;- All Rights Reserved.</span></p>
@@ -1245,7 +1240,8 @@ Licensed &amp; Insured" />
                       class="x-el x-el-hr c1-1 c1-2 c1-3 c1-4 c1-5 c1-a0 c1-a1 c1-9e c1-19 c1-95 c1-a2 c1-s c1-t c1-e c1-f x-d-ux" />
                     <h5 data-ux="Heading" data-aid="FOOTER_POWERED_BY_RENDERED" data-route="poweredBy"
                       class="x-el x-el-h5 c1-1 c1-2 c1-3 c1-4 c1-5 c1-14 c1-15 c1-a3 c1-17 c1-7v c1-2f c1-35 c1-19 c1-1a c1-e c1-f x-d-ux x-d-aid x-d-route">
-                      <span>Licensed &amp; Insured</span></h5>
+                      <span>Licensed &amp; Insured</span>
+                    </h5>
                   </div>
                 </div>
               </section>
