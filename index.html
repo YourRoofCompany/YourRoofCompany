@@ -85,6 +85,13 @@ Licensed &amp; Insured" />
       font-stretch: normal;
       src: url(https://img1.wsimg.com/gfonts/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAaBO9a6VQ.woff) format('woff');
     }
+    .chat-right {
+    position: absolute; /* or 'fixed' depending on your layout */
+    right: 0;
+    top: 50%; /* Adjust as needed */
+    transform: translateY(-50%); /* This centers it vertically */
+    /* Add additional styling as needed */
+}
   </style>
   <link rel="stylesheet"
     href="//img1.wsimg.com/blobby/go/e5496663-d109-4daa-843e-967b325e1036/gpub/6b70c13cf81664b3/styles.css" />
@@ -581,6 +588,24 @@ Licensed &amp; Insured" />
             </div>
           </div>
         </div>
+        <script
+        type="module"
+        src="https://unpkg.com/deep-chat@1.4.6/dist/deepChat.bundle.js"
+      ></script>
+      
+      <h1>Deep Chat</h1>
+      <!-- Attributes can be set as strings either directly on the element (demo/textInput) or via a `setAttribute` method on its reference (introMessage).
+        When passing JSON objects make sure that they are first correctly stringified (use the following tool https://jsonlint.com/), functions assigned
+        to properties must not have external references and all regex values are properly escaped.
+        You can also pass values into the component via properties by using the element reference (initialMessages).
+        -->
+      <deep-chat
+        id="chat-element"
+        class="chat-right"
+        demo="true"
+        textInput='{"placeholder":{"text": "Welcome to the demo!"}}'
+      ></deep-chat>
+      
         <div id="2555d3fb-3fa2-45f8-8a29-677d957de9e5" class="widget widget-social widget-social-social-1">
           <div data-ux="Widget"
             class="x-el x-el-div x-el widget-social-social-1 c1-1 c1-2 c1-3 c1-4 c1-5 c1-6 c1-e c1-f x-d-ux c1-1 c1-2 c1-3 c1-4 c1-5 c1-e c1-f x-d-ux">
@@ -771,8 +796,9 @@ Licensed &amp; Insured" />
                               specialize in providing the most affordable Top Quality <span
                                 class="x-el x-el-span c1-1 c1-2 c1-3 c1-4 c1-5n c1-3l x-d-ux">Commercial Roofing</span>
                               in the entire Your Area <span
-                                class="x-el x-el-span c1-1 c1-2 c1-3 c1-4 c1-5n c1-3l x-d-ux"></span>. &nbsp;Ask about
-                              our <span class="x-el x-el-span c1-1 c1-2 c1-3 c1-4 c1-5n c1-3l x-d-ux">Commercial Volume
+                                class="x-el x-el-span c1-1 c1-2 c1-3 c1-4 c1-5n c1-3l x-d-ux">Tri-State area</span>.
+                              &nbsp;Ask about our <span
+                                class="x-el x-el-span c1-1 c1-2 c1-3 c1-4 c1-5n c1-3l x-d-ux">Commercial Volume
                                 discount</span>. Commercial Roofing in Your Area at it's finest. &nbsp;For more reasons
                               why you should choose Your Roofing and Siding for all of your <span
                                 class="x-el x-el-span c1-1 c1-2 c1-3 c1-4 c1-5n c1-3l x-d-ux">Your Area Roofing
@@ -808,9 +834,9 @@ Licensed &amp; Insured" />
                           data-route="cards/1/description"
                           class="x-el x-el-p c1-1 c1-2 c1-3 c1-4 c1-5 c1-14 c1-15 c1-3b c1-17 c1-18 c1-19 c1-1a c1-81 c1-82 c1-83 c1-84 c1-85 c1-86 c1-87 c1-88 c1-89 c1-8a c1-8b c1-8c c1-8d c1-8e c1-8f c1-8g c1-8h c1-8i c1-8j c1-8k c1-8l c1-8m c1-8n c1-8o c1-8p c1-8q c1-8r c1-8s c1-2k c1-e c1-f x-d-ux x-d-aid x-d-route x-rt">
                           <p style="margin:0"><span>We offer the most affordable Roofing and Siding in the entire Your
-                              Area .<span class="x-el x-el-span c1-1 c1-2 c1-3 c1-4 c1-5n c1-3l x-d-ux"> Best Prices,
-                                Top Quality, Free Estimates, Reliability, &amp; Great Warranties! No Sales Reps</span>,
-                              No suprises! Just Affordable, <span
+                              Area Tri-State Area.<span class="x-el x-el-span c1-1 c1-2 c1-3 c1-4 c1-5n c1-3l x-d-ux">
+                                Best Prices, Top Quality, Free Estimates, Reliability, &amp; Great Warranties! No Sales
+                                Reps</span>, No suprises! Just Affordable, <span
                                 class="x-el x-el-span c1-1 c1-2 c1-3 c1-4 c1-5n c1-3l x-d-ux">Top Quality Residential
                                 Roofing. </span>&nbsp;For more reasons why you should choose Your Roofing and Siding for
                               all of your <span class="x-el x-el-span c1-1 c1-2 c1-3 c1-4 c1-5n c1-3l x-d-ux">Your Area
@@ -1091,6 +1117,7 @@ Licensed &amp; Insured" />
             </div>
           </div>
         </div>
+
         <div id="12268a4e-7233-46bb-8318-628a7c0fe717" class="widget widget-footer widget-footer-footer-1">
           <div data-ux="Widget"
             class="x-el x-el-div x-el widget-footer-footer-1 c1-1 c1-2 c1-3 c1-4 c1-5 c1-p c1-e c1-f x-d-ux c1-1 c1-2 c1-3 c1-4 c1-5 c1-e c1-f x-d-ux">
@@ -1142,8 +1169,7 @@ Licensed &amp; Insured" />
                         </svg></a></div>
                     <div data-ux="Heading" data-aid="FOOTER_COPYRIGHT_RENDERED" data-route="copyright"
                       class="x-el x-el-p c1-1 c1-2 c1-3 c1-4 c1-5 c1-14 c1-15 c1-16 c1-17 c1-7v c1-2f c1-35 c1-19 c1-95 c1-e c1-f x-d-ux x-d-aid x-d-route x-rt">
-                      <p style="margin:0"><span>Copyright © 2024 Your Roof Company &nbsp;- All Rights Reserved.</span>
-                      </p>
+                      <p style="margin:0"><span>Copyright © 2019 Your Roofing &nbsp;- All Rights Reserved.</span></p>
                     </div>
                     <hr data-ux="HR"
                       class="x-el x-el-hr c1-1 c1-2 c1-3 c1-4 c1-5 c1-a0 c1-a1 c1-9e c1-19 c1-95 c1-a2 c1-s c1-t c1-e c1-f x-d-ux" />
@@ -1241,6 +1267,7 @@ Licensed &amp; Insured" />
   <script
     type="text/javascript">function tccl_dpsid() { for (var t = "dps_site_id=", i = document.cookie.split(";"), e = 0; e < i.length; e++) { for (var n = i[e]; " " == n.charAt(0);)n = n.substring(1); if (0 == n.indexOf(t)) return n.substring(t.length, n.length) } return null } _trfd.push({ "tccl.baseHost": "secureserver.net" }), _trfd.push({ "websiteId": "e5496663-d109-4daa-843e-967b325e1036" }), _trfd.push({ "pd": "2019-04-12T23:05:01.598Z" }), _trfd.push({ ap: "IPv2", ds: tccl_dpsid() || "-1" });</script>
   <script type="text/javascript" src="//img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js"></script>
+
 </body>
 
 </html>

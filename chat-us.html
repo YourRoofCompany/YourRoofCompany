@@ -1,0 +1,24 @@
+<!-- This example demonstrates how to set values via attributes and properties (recommended) -->
+<!-- !!Please note that upon loading/saving this sandbox - the property values applied will not be applied without a RESTART!! -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <!-- !!Either set the script as "module" or place your code in a timeout in order to wait for the component to load -->
+  <script type="module">
+    const elementRef = document.getElementById("chat-element");
+    // Setting value via a property (easiest way)
+    elementRef.initialMessages = [
+      { role: "user", text: "Hey, how are you today?" },
+      { role: "ai", text: "I am doing very well!" },
+    ];
+    elementRef.setAttribute(
+      "introMessage",
+      JSON.stringify({
+        text: "JavaScript demo for the Deep Chat component.",
+      })
+    );
+  </script>
+</html>
